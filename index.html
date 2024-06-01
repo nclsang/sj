@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>SJ's Work Space</title>
+    <title>SJ's Homepage</title>
     <!-- 구글 폰트 로드 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -248,9 +248,6 @@
                 Copyright © 2024 S.J.Jeon. All rights reserved. - 2024.05.25 -
             </footer>
 
-            <!-- 맨 하단 top 버튼 -->
-            <button onclick="topFunction()" class="top-button" id="myBtn">Top</button>
-        </div>
     </section>
 
 
@@ -270,31 +267,7 @@
             flipped = !flipped; // 상태 업데이트
         }
     </script>
-    <script>
-        // 페이지가 로드되면 실행될 함수
-        window.onload = function() {
-            // 스크롤 위치를 감지하고 top 버튼을 표시 또는 숨김
-            window.onscroll = function() {scrollFunction()};
-        };
 
-        // 스크롤 위치에 따라 top 버튼을 표시하거나 숨기는 함수
-        function scrollFunction() {
-            // 스크롤 위치가 20px 이상이면 버튼 표시, 그렇지 않으면 숨김
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // top 버튼 클릭 시 맨 위로 부드럽게 스크롤하는 함수
-        function topFunction() {
-            // Safari용 스크롤 설정
-            document.body.scrollTop = 0;
-            // Chrome, Firefox, IE, Opera용 스크롤 설정
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 
 </html>
