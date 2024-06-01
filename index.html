@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>SJ's Homepage</title>
     <!-- 구글 폰트 로드 -->
@@ -40,7 +39,7 @@
             });
 
             // 문단에 fadeIn 애니메이션 적용
-            $('h4').css('opacity', 0).each(function (index) {
+            $('.page1container h4').css('opacity', 0).each(function (index) {
                 $(this).delay(index * 500).animate({ opacity: 1 }, 1000);
             });
         });
@@ -52,16 +51,19 @@
 
 
 
-<div class="header">
+<!-----------------------------------Header------------------------------------>
+<div class="header" id = "header">
     <nav class="firstnavbar">
         <div class="brand-title" id="button">SJ Jeon</div>
-        <a href="#" class="toggle-button">
+        <!-----------------------------------햄버거 바------------------------------------>
+        <a href="#" class="toggle-button" id="firstnavbarcolor">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
+        <!-----------------------------------원래 화면에서 나오는 메뉴------------------------------------>
         <div class="firstnavbar-links">
-            <ul>
+            <ul id="firstnavbarcolor">
                 <div onclick="page1Click()">
                     <li><a href="#">Home</a></li>
                 </div>
@@ -71,6 +73,9 @@
                 <div onclick="page3Click()">
                     <li><a href="#">About my Life</a></li>
                 </div>
+                <div onclick="page4Click()">
+                    <li><a href="#">Useful Things</a></li>
+                </div>
             </ul>
         </div>
     </nav>
@@ -79,45 +84,53 @@
 
 
 <body>
-    <!--메뉴-->
+    <!-----------------------------------축소된 화면에서 나오는 메뉴------------------------------------>
     <div class="menu">
         <div class="menu-item" onclick="page1Click()"><a href="#">Home</a></div>
         <div class="menu-item" onclick="page2Click()"><a href="#">Profile</a></div>
         <div class="menu-item" onclick="page3Click()"><a href="#">About my Life</a></div>
+        <div class="menu-item" onclick="page4Click()"><a href="#">Useful Things</a></div>
     </div>
 
-    <section id="page1">
 
-        <img class="page1img" src="./img/spider.png" alt="img">
-        <br><br><br><br><br><br><br>
-        <h4>I'm Jeon SangJun who made this page. It's an honor to have opportunity to make my own homepage as an
-            assignment.
-        </h4>
-        <h4>But, for me, it is not just only for an assignment. I will keep on developing and updating this page for my
-            own
-            workspace.</h4>
-        <h4>In here, you can see my personal introduction. For example, <b>'Profile', 'Life Story', 'Useful Things'</b></h4>
-        <h4>I think it will be worth looking around this homepage.</h4>
-        <h4>From now on, let's explore!</h4>
-            
     
-       
-        <footer>
-            Copyright © 2024 S.J.Jeon. All rights reserved. - 2024.05.25 -
-        </footer>
+    <!-----------------------------------page1------------------------------------>
+    <section id="page1">
+        <div class="page1container">
+            <img class="page1img" src="./img/spider.png" alt="img">
+            <br><br><br><br><br><br><br>
+            <h4>I'm Jeon SangJun who made this page. It's an honor to have opportunity to make my own homepage as an
+                assignment.
+            </h4>
+            <h4>But, for me, it is not just only for an assignment. I will keep on developing and updating this page for my
+                own
+                workspace.</h4>
+            <h4>In here, you can see my personal introduction. For example, <b>'Profile', 'Life Story', 'Useful Things'</b></h4>
+            <h4>I think it will be worth looking around this homepage.</h4>
+            <h4>From now on, let's explore!</h4>
+        </div>
+                
+        
+        
+            <footer>
+                Copyright © 2024 S.J.Jeon. All rights reserved. - 2024.05.25 -
+            </footer>
     </section>
 
-
+    <!-----------------------------------page2------------------------------------>
     <section id="page2">
         <div class="page2container">
+
             <!-- 프로필 카드 -->
             <div class="card" onclick="flipCard()">
                 <div class="front">Profile</div>
                 <div class="back">
+
                     <!-- 카드 뒷면 왼쪽 영역 -->
                     <div class="back-left">
                         <img class="cardimg" src="img/me.png" alt="Profile Picture"> <!-- 프로필 사진 -->
                     </div>
+
                     <!-- 카드 뒷면 오른쪽 영역 -->
                     <div class="back-right">
                         <p>Name : Jeon SangJun</p> <!-- 이름 -->
@@ -130,19 +143,26 @@
                 </div>
             </div>
         </div>
+
+        <!-- 하단 footer -->
+        <footer>
+            Copyright © 2024 S.J.Jeon. All rights reserved. - 2024.05.25 -
+        </footer>
     </section>
 
 
+    <!-----------------------------------page3------------------------------------>
     <section id="page3">
-        <div class="page3divContianer">
+        <div class="page3Contianer">
             <!-- 내비게이션 바 -->
             <nav id="navbar">
+                <a href="#top">TOP</a>
                 <a href="#age0-9">Age 0-9</a>
                 <a href="#age10-19">Age 10-19</a>
                 <a href="#age20-now">Age 20-now</a>
             </nav>
             
-            <!-- 본문 내용 -->
+            <!----------------------본문 내용----------------------->
             <br><br><br><br>
             <h1>About my life</h1>
             <h3 id="age0-9"><b>- Age of 0~9</b></h3>
@@ -242,12 +262,27 @@
                 the
                 future!!</p>
             <br><br><br><br><br>
+        </div>
+
+        <!-- 하단 footer -->
+        <footer>
+            Copyright © 2024 S.J.Jeon. All rights reserved. - 2024.05.25 -
+        </footer>
+
+    </section>
+
+            
+    <!-----------------------------------page4------------------------------------>
+    <section id="page4">
+        <div class="page4Contianer">
+            <br><br><br><br><br><br><br>
+            <h4>Will Update Soon!</h4>
+        </div>
 
             <!-- 하단 footer -->
             <footer>
                 Copyright © 2024 S.J.Jeon. All rights reserved. - 2024.05.25 -
             </footer>
-
     </section>
 
 
