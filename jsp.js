@@ -21,6 +21,16 @@ function page1Click() {
     // SJ Jeon 글자색를 white로 설정
     const button = document.getElementById('button');
     button.style.color = 'white';
+    // 각 메뉴 항목의 텍스트 색상을 white로 설정
+    const menuItems = document.querySelectorAll('.firstnavbar-links ul li a');
+    menuItems.forEach(item => {
+        item.style.color = 'white';
+    });
+    // 햄버거 바의 색상을 white로 설정
+    const hamburgerBars = document.querySelectorAll('.toggle-button .bar');
+    hamburgerBars.forEach(bar => {
+        bar.style.backgroundColor = 'white';
+    });
 }
 
 //page2를 클릭했을 때 실행되는 함수//
@@ -43,9 +53,16 @@ function page2Click() {
     // SJ Jeon 글자색를 gold로 설정
     const button = document.getElementById('button');
     button.style.color = 'gold';
-    // firstnavbar의 글자색를 gold로 설정
-    const firstnavbarcolor = document.getElementById('firstnavbarcolor');
-    firstnavbarcolor.style.color = 'gold';
+    // 각 메뉴 항목의 텍스트 색상을 gold로 설정
+    const menuItems = document.querySelectorAll('.firstnavbar-links ul li a');
+    menuItems.forEach(item => {
+        item.style.color = 'gold';
+    });
+    // 햄버거 바의 색상을 gold로 설정
+    const hamburgerBars = document.querySelectorAll('.toggle-button .bar');
+    hamburgerBars.forEach(bar => {
+        bar.style.backgroundColor = 'gold';
+    });
 }
 
 //page3를 클릭했을 때 실행되는 함수//
@@ -68,6 +85,16 @@ function page3Click() {
     // SJ Jeon 글자색를 white로 설정
     const button = document.getElementById('button');
     button.style.color = 'white';
+    // 각 메뉴 항목의 텍스트 색상을 white로 설정
+    const menuItems = document.querySelectorAll('.firstnavbar-links ul li a');
+    menuItems.forEach(item => {
+        item.style.color = 'white';
+    });
+    // 햄버거 바의 색상을 white로 설정
+    const hamburgerBars = document.querySelectorAll('.toggle-button .bar');
+    hamburgerBars.forEach(bar => {
+        bar.style.backgroundColor = 'white';
+    });
 }
 
 //page4를 클릭했을 때 실행되는 함수//
@@ -90,6 +117,16 @@ function page4Click() {
     // SJ Jeon 글자색를 white로 설정
     const button = document.getElementById('button');
     button.style.color = 'white';
+    // 각 메뉴 항목의 텍스트 색상을 white로 설정
+    const menuItems = document.querySelectorAll('.firstnavbar-links ul li a');
+    menuItems.forEach(item => {
+        item.style.color = 'white';
+    });
+    // 햄버거 바의 색상을 white로 설정
+    const hamburgerBars = document.querySelectorAll('.toggle-button .bar');
+    hamburgerBars.forEach(bar => {
+        bar.style.backgroundColor = 'white';
+    });
 }
 
 //페이지가 로드될 때 기본적으로 page1을 클릭하게 함//
